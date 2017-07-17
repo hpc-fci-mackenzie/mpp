@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>:: Marathon of Parallel Programming ::</title>
+	<link rel="stylesheet" href="../css/marathon.css" type="text/css">
+
+	<script language="javascript" type="text/javascript" src="../js/ahah.js"></script>
+	<script language="javascript" type="text/javascript">
+		function load(filename, content) {
+			ahah(filename, content);
+		}
+	</script>
+
+</head>
+<body>
+<center>
+
+	<div id="corpo">
+
+		<!-- Header -->
+		<div id="cabecalho">
+			<img src="banner.jpg" border="0" width="750" /><br />
+			5th Marathon of Parallel Programming
+		</div>
+
+		<!-- Left bar -->
+		<div id="leftbar">
+			<!-- Menu -->
+			<ul class="avmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="rules.html">Rules</a></li>
+				<li><a href="env.html">Computational Environment</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="winners.html">Winners</a></li>
+				<li><a href="problems.html">Problems set</a></li>
+				<li><a href="local.html">Local Committee</a></li>
+				<li><a href="gpu.html">GPU Special Contest</a></li>
+				<li>&nbsp;</li>
+				<li><a href="../study.html">How to study</a></li>
+				<li><a href="../committee.html">Committee</a></li>
+				<li><a href="../old.html">Old contests</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+
+				<!-- News -->
+				<li id="news_content" class="anuncio">
+				</li>
+			</ul>
+		</div>
+		<script language="javascript">
+			load('../news.html','news_content');
+		</script>
+
+		<!-- Right bar -->
+		<div id="rightbar">
+			<div class="anuncio">
+				<h1>2010 Sponsors:</h1>
+				<center>
+				<a target="_blank" href="http://www.intel.com"><img src="intel.png" border="0" /></a>
+				<a target="_blank" href="http://www.sgi.com"><img src="sgi.png" border="0" /></a>
+				<a target="_blank" href="http://www.versatushpc.com.br"><img src="versatushpc.png" border="0" /></a>
+				</center>
+			</div>
+			<div class="anuncio">
+				<h1>Current Edition</h1>
+				<p><a href="..">Click here</a> for the current edition of the Marathon of
+				Parallel Programming</p>
+			</div>
+
+			<!-- Others information -->
+			<div id="others_info" class="anuncio"></div>
+			<script language="javascript">
+				load('../others_info.html','others_info');
+			</script>
+		</div>
+
+		<!-- Body -->
+		<div id="texto">
+			<h1>Rules</h1>
+			<br />
+			<h2>The team</h2>
+			<p>The Marathon will be open to teams of up to three participants, who must be
+			undergraduate or graduate students. All of them must be registered to the SBAC-PAD
+			conference (see the special fee). A substitute member can be indicated, and one
+			substitution will be allowed during the marathon. Up to 8 teams will be enrolled
+			into the Marathon. Each team will have at his disposal a PC for the whole duration of
+			the Marathon, and access to a parallel machine to test and measure their programs.
+			Reference books and printed material will be allowed during the event, and it is up
+			to the teams to bring their bibliography to the local of the Marathon.</p>
+
+			<center>
+				<div class="box" align="center">
+					<a href="registration.html">Click here to register your team to the marathon</a>
+				</div>
+			</center>
+
+			<h2>The problems</h2>
+			<p>A set of problems will be specified by an independent <a href="../committee.html">
+			committee</a>. Each one will consist of an informal explanation of the problem to be
+			solved, the input and output format and a sequential implementation.</p>
+			<p>In order to be taken into account into the final score, the parallel versions should
+			be correct, which means that they should deliver a solution equal to the sequential
+			one.</p>
+
+			<center>
+				<div class="box" align="center">
+					<a href="problems.html">Click here to get the problem set</a>
+				</div>
+			</center>
+
+			<h2>The tools</h2>
+			<p>The classical HPC libraries and tools (OpenMP, MPI, Posix Threads), as well as
+			sequential tools for profiling, compiling and debugging, will be provided on the target
+			machine. An important point is that the acceleration is the metrics, so that any
+			technique that can accelerate the code will be authorized.</p>
+
+			<h2>The score</h2>
+			<p>The acceleration of each problem will be measured as follows: the run time obtained
+			with all the processors allocated to a team will be divided by the sequential runtime
+			obtained with the sequential implementation provided by the organization. Thus, any
+			sequential optimization prior to the parallelization will be bonus. The accelerations
+			of all problems parallelized by a team will be added, so that the more (efficient)
+			parallel programs it gets, the better the score.</p>
+			<p>In order to be taken into account, a parallel solution will have to be correct,
+			that is to say it will have to deliver the same results as the sequential program.</p>
+			<p>In case of tie, the scalability of the solutions will be measured to choose the
+			best team, as follows: the organizers will run the parallel solutions on the whole
+			target machine and measure the new accelerations, adding them up as in the former
+			case. The winner will be the team that obtains the best acceleration on the full
+			machine.</p>
+
+			<a name="awards"></a>
+			<h2>The awards</h2>
+			<p>The awards will be offered by the sponsors companies:</p>
+			<table border="0">
+				<tr>
+					<td><center><a target="_blank" href="http://www.intel.com"><img src="intel.png" border="0" /></a></center></td>
+					<td><center><a target="_blank" href="http://www.sgi.com"><img src="sgi.jpg" border="0" /></a></center></td>
+				</tr>
+			</table>
+			<ul>
+				<li><b>1st team</b>:<br>
+					3 CPUs: Intel Core i7 875 K and<br>3 boards: Intel DP55KG</li>
+				<li><b>2nd team</b>:<br>
+					3 CPUs: Intel Core i5 655 K and<br>3 boards: Intel DP55KG</li>
+			</ul>
+		</div>
+
+		<!-- Footnotes -->
+		<div id="rodape">
+			<table>
+				<tr>
+					<td colspan="4">Organized by</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.lncc.br" target="_blank"><img src="lncc.jpg" border="0" /></a></td>
+					<td><a href="http://www.mackenzie.br/fci.html" target="_blank"><img src="mackenzie.png" border="0" /></a></td>
+					<td><a href="http://www.inf.ufrgs.br" target="_blank"><img src="ufrgs.gif" border="0" /></a></td>
+					<td><a href="http://www.dcc.ufmg.br" target="_blank"><img src="ufmg.jpg" border="0" /></a></td>
+				</tr>
+			</table>
+			<center>
+				Better seen in <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>.
+			</center>
+		</div>
+	</div>
+</center>
+</body>
+</html>

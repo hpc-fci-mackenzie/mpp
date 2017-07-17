@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>:: Marathon of Parallel Programming ::</title>
+	<link rel="stylesheet" href="../css/marathon.css" type="text/css">
+
+	<script language="javascript" type="text/javascript" src="../js/ahah.js"></script>
+	<script language="javascript" type="text/javascript">
+		function load(filename, content) {
+			ahah(filename, content);
+		}
+	</script>
+
+</head>
+<body>
+<center>
+
+	<div id="corpo">
+
+		<!-- Header -->
+		<div id="cabecalho">
+			<img src="banner.jpg" border="0" width="750" /><br />
+			5th Marathon of Parallel Programming
+		</div>
+
+		<!-- Left bar -->
+		<div id="leftbar">
+			<!-- Menu -->
+			<ul class="avmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="rules.html">Rules</a></li>
+				<li><a href="env.html">Computational Environment</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="winners.html">Winners</a></li>
+				<li><a href="problems.html">Problems set</a></li>
+				<li><a href="local.html">Local Committee</a></li>
+				<li><a href="gpu.html">GPU Special Contest</a></li>
+				<li>&nbsp;</li>
+				<li><a href="../study.html">How to study</a></li>
+				<li><a href="../committee.html">Committee</a></li>
+				<li><a href="../old.html">Old contests</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+
+				<!-- News -->
+				<li id="news_content" class="anuncio">
+				</li>
+			</ul>
+		</div>
+		<script language="javascript">
+			load('../news.html','news_content');
+		</script>
+
+		<!-- Right bar -->
+		<div id="rightbar">
+			<div class="anuncio">
+				<h1>2010 Sponsors:</h1>
+				<center>
+				<a target="_blank" href="http://www.intel.com"><img src="intel.png" border="0" /></a>
+				<a target="_blank" href="http://www.sgi.com"><img src="sgi.png" border="0" /></a>
+				<a target="_blank" href="http://www.versatushpc.com.br"><img src="versatushpc.png" border="0" /></a>
+				</center>
+			</div>
+			<div class="anuncio">
+				<h1>Current Edition</h1>
+				<p><a href="..">Click here</a> for the current edition of the Marathon of
+				Parallel Programming</p>
+			</div>
+
+			<!-- Others information -->
+			<div id="others_info" class="anuncio"></div>
+			<script language="javascript">
+				load('../others_info.html','others_info');
+			</script>
+		</div>
+
+		<!-- Body -->
+		<div id="texto">
+			<h1>1st GPU Programming Contest</h1>
+			<br />
+			<p>In 2010, the Marathon of Parallel Programming hosts the 1st GPU Special Programming
+			Contest. This competition is supported by VersatusHPC and SGI.</p>
+			<p>The same <a href="rules.html">rules</a> are applied on this contest. The winners
+			will be officially announced during the special meeting of 22nd SBAC-PAD committee.</p>
+			<h2>Awards</h2>
+			<p>The awards will be offered by the sponsors companies:</p>
+			<table border="0">
+				<tr>
+					<td><center><a target="_blank" href="http://www.sgi.com"><img src="sgi.png" border="0" /></a></center></td>
+					<td><a target="_blank" href="http://www.versatushpc.com.br"><img src="versatushpc.png" border="0" /></a></td>
+
+				</tr>
+			</table>
+			<ul>
+				<li><b>1st team</b>:<br>
+					3 GeForce GT 430</li>
+			</ul>
+			<h2>Program</h2>
+			<br />
+			<p>The GPU Contest will be hosted by <a target="_blank" href="http://www.sbc.org.br/sbac/2010">
+			LNCC</a> at:</p>
+			<p><b>October 29th, 2010 (8:30am): Contest</b></p>
+			<br />
+			<p>In conjunction with International Symposium on Computer Architecture and High
+			Performance Computing -
+			<a target="_blank" href="http://www.sbc.org.br/sbac/2010">SBAC-PAD 2010</a>, in
+			Petropolis, RJ, Brazil.</p>
+			<a name="winners"></a>
+			<h2>Winners</h2>
+			<br />
+			<p>These are the results of the GPU Contest:</p>
+			<ul>
+				<li><b>1st place, the Winners: Universidade Federal de Vi&ccedil;osa - 73.5818 points</b>
+					<ul>
+					<li>Salles Viana Gomes de Magalh&atilde;es, Julio Cesar Goldner Vendramini
+						and Raphael Rodrigues Campos</li>
+					</ul>
+				</li>
+				<li><b>2nd place: Universidade Federal do Esp&iacute;rito Santo - 12.3982 points</b>
+					<ul>
+					<li>Lucas de Paula Veronese and Filipe Wall Mutz</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Special honor are given to these teams:</p>
+			<ul>
+				<li><b>LNCC</b>
+					<ul>
+					<li>Daniel Gaspar Gon&ccedil;alves de Souza, Fabr&iacute;cio Gomes Vilasboas
+						and Pedro Henrique Vieira de Oliveira Azevedo</li>
+					</ul>
+				</li>
+				<li><b>DCC/UFMG</b>
+					<ul>
+					<li>Bruno Coutinho and Thiago Teixeira</li>
+					</ul>
+				</li>
+			</ul>
+			<h2>The Problems</h2>
+			<p>The problem set used in the GPU contest is:</p>
+			<ul>
+				<li><a href="problemset.pdf">Problems</a> (<a href="inputs.zip">some
+					inputs</a>)</li>
+				<li style="list-style-type: none">
+				<ol>
+					<li>Smooth - <a href="smooth.zip">sequential</a></li>
+					<li>Matrix - <a href="matrix.zip">sequential</a></li>
+					<li>Gauss Elimination - <a href="gauss.zip">sequential</a></li>
+				</ol>
+			</li>
+			</ul>
+			<h2>Photos</h2>
+			<center>
+				<div class="box" align="center">
+				<table border="0">
+				<tr>
+					<td><a target="_blank" href="maratona-30.jpg"><img
+						border="0" title="click to enlarge" src="tmaratona-30.jpg" /></a></td>
+					<td><a target="_blank" href="maratona-5.jpg"><img
+						border="0" title="click to enlarge" src="tmaratona-5.jpg" /></a></td>
+				</tr>
+				</table>
+				</div>
+			</center>
+		</div>
+
+		<!-- Footnotes -->
+		<div id="rodape">
+			<table>
+				<tr>
+					<td colspan="4">Organized by</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.lncc.br" target="_blank"><img src="lncc.jpg" border="0" /></a></td>
+					<td><a href="http://www.mackenzie.br/fci.html" target="_blank"><img src="mackenzie.png" border="0" /></a></td>
+					<td><a href="http://www.inf.ufrgs.br" target="_blank"><img src="ufrgs.gif" border="0" /></a></td>
+					<td><a href="http://www.dcc.ufmg.br" target="_blank"><img src="ufmg.jpg" border="0" /></a></td>
+				</tr>
+			</table>
+			<center>
+				Better seen in <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>.
+			</center>
+		</div>
+	</div>
+</center>
+</body>
+</html>
