@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>:: Marathon of Parallel Programming ::</title>
+	<link rel="stylesheet" href="css/marathon.css" type="text/css">
+
+	<script language="javascript" type="text/javascript" src="js/ahah.js"></script>
+	<script language="javascript" type="text/javascript">
+		function load(filename, content) {
+			ahah(filename, content);
+		}
+	</script>
+
+</head>
+<body>
+<center>
+
+	<div id="corpo">
+
+		<!-- Header -->
+		<div id="cabecalho">
+			<img src="current/banner.jpg" border="0" width="750"/><br />
+			Marathon of Parallel Programming
+		</div>
+
+		<!-- Left bar -->
+		<div id="leftbar">
+			<!-- Menu -->
+			<ul class="avmenu">
+				<li><a href="current/index.html">Home</a></li>
+				<li><a href="current/rules.html">Rules</a></li>
+				<li><a href="current/env.html">Computational Environment</a></li>
+				<li><a href="current/registration.html">Registration</a></li>
+				<li><a href="current/winners.html">Winners</a></li>
+				<li><a href="current/problems.html">Problems set</a></li>
+				<li><a href="current/local.html">Local Committee</a></li>
+				<li>&nbsp;</li>
+				<li><a href="study.html">How to study</a></li>
+				<li><a href="committee.html">Committee</a></li>
+				<li><a href="old.html">Old contests</a></li>
+				<li><a href="contact.html">Contact</a></li>
+
+				<!-- News -->
+				<li id="news_content" class="anuncio">
+					<script language="javascript">
+						load('news.html','news_content');
+					</script>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Right bar -->
+		<div id="rightbar">
+			<div class="anuncio">
+				<h1>Main event</h1>
+				<a target="_blank" href="http://www.sbc.org.br/sbac">SBAC-PAD</a>
+			</div>
+
+			<div class="anuncio">
+				<h1>Current Edition</h1>
+				<p><a href="index.html">Click here</a> for the current edition of the Marathon of
+				Parallel Programming</p>
+			</div>
+
+			<!-- Others information -->
+			<div id="others_info" class="anuncio"></div>
+			<script language="javascript">
+				load('others_info.html','others_info');
+			</script>
+		</div>
+
+		<!-- Body -->
+		<div id="texto">
+			<h1>How to study</h1>
+			<br/>
+			<p>There are many ways to get ready for the Marathon of Parallel Programming. Here are some
+			simple tips.</p>
+			<h2>Books</h2>
+			<p>The known edition of <i>Introduction of Parallel Computing</i> is important to
+			beginners. The authors' page can be found
+			<a href="http://www-users.cs.umn.edu/~karypis/parbook/" target="_blank">here</a>.</p>
+			<p>Another interesting book is <i>Parallel Programming</i>, from Wilkinson &amp; Allen. It can be found
+			<a href="http://coitweb.uncc.edu/~abw/parallel/par_prog/" target="_blank">here</a>.</p>
+			<p>Other popular book that includes some parallel vision is the <i>Introduction to
+			Algorithms</i>, the new edition (2009). It can be found
+			<a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11866&mode=toc" target="_blank">here</a>
+			and <a href="http://mitpress.mit.edu/sites/default/files/titles/content/9780262033848_sch_0001.pdf" target="_blank">here</a>.</p>
+			<p>Furthermore, the communication between processes can interfere in the solution speedup.
+			In the Marathon of Parallel Programming, there are three ways to build your solution:</p>
+			<ul>
+				<li>MPI - Message Passing Interface
+				(some <a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=4579" target="_blank">
+				references</a>)</li>
+				<li>OpenMP (some <a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11387" target="_blank">
+				references</a>)</li>
+				<li>POSIX Threads (some <a href="http://www.mypearsonstore.com/bookstore/product.asp?isbn=0201633922" target="_blank">
+				references</a>)</li>
+			</ul>
+			<h2>Links</h2>
+			<p>If you like search engines, there are some interesting material
+			<a href="http://www.google.com/#q=introduction+to+parallel+programming" target="_blank">here</a>.</p>
+			<p>But, some of them we appreciate you to look at:</p>
+			<ul>
+				<li><a href="http://www.mcs.anl.gov/research/projects/mpi/tutorial/gropp/talk.html" target="_blank">MPI</a></li>
+				<li><a href="https://computing.llnl.gov/tutorials/openMP/" target="_blank">OpenMP</a></li>
+				<li><a href="https://computing.llnl.gov/tutorials/pthreads/" target="_blank">POSIX threads</a></li>
+			</ul>
+			<p>Moreover, you must know <a href="http://www.gnu.org/software/libc/manual/html_node/index.html"
+			target="_target">C/C++ programming</a> and
+			<a href="http://mrbook.org/tutorials/make/" target="_blank">Makefile tools</a>.</p>
+			<h2>Contests</h2>
+			<p>There are some contests that you might take a look:</p>
+			<ul>
+        <li><a href="http://www.studentclustercompetition.us" target="_blank">Student Cluster Competition (SSC) at SuperComputing</a></li>
+        <li><a href="http://luna.inf.um.es" target="_blank">Concurso de Programación Paralela (Spanish)</a></li>
+        <li>ISC Student Cluster Competition <a href="http://hpcadvisorycouncil.com/competition.php" target="_blank">here</a> or <a href="http://www.studentclustercomp.com" target="_blank">here</a></li>
+        <li>HiPC Student Parallel Programming Challenge <a href="http://www.hipc.org/hipc2015/prog-challenge.php" target="_blank">(2015)</a> <a href="http://www.hipc.org/hipc2016/prog-challenge.php" target="_blank">(2016)</a></li>
+        <li>Intel Threading Challenge
+					<del><a href="http://softwarecontests.intel.com/threadingchallenge/" target="_blank">(2008)</a>
+					<a href="http://software.intel.com/en-us/contests/Threading-Challenge-2009/codecontest.php" target="_blank">(2009)</a>
+					<a href="http://software.intel.com/en-us/contests/threading-challenge-2010/contests.php" target="_blank">(2010)</a>
+					<a href="http://software.intel.com/en-us/contests/intel-threading-challenge-2011/contests.php" target="_blank">(2011)</a></del>
+					<ins>unfortunately, these links are down!</ins>
+				</li>
+				<li><a href="http://academiamulticore.org" target="_blank">Reto Intel 8 (Mexico)</a></li>
+				<li><a href="http://cm.baylor.edu" target="_blank">ACM Programming Contest</a></li>
+				<li><a href="http://www.topcoder.com/tc" target="_blank">
+					TopCoder</a></li>
+			</ul>
+		</div>
+
+		<!-- Footnotes -->
+		<div id="rodape">
+		</div>
+	</div>
+</center>
+</body>
+</html>
