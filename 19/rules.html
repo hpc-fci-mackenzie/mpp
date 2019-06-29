@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>:: Marathon of Parallel Programming ::</title>
+	<link rel="stylesheet" href="../css/marathonHTML5.css" type="text/css">
+
+	<script type="text/javascript" src="../js/ahah.js"></script>
+	<script type="text/javascript">
+		function load(filename, content) {
+			ahah(filename, content, false);
+		}
+	</script>
+
+</head>
+<body>
+
+	<div id="corpo">
+
+		<!-- Header -->
+		<div id="cabecalho">
+			<img src="banner.jpg" border="0" width="750"  height="200"/><br />
+			14th Marathon of Parallel Programming
+		</div>
+
+		<!-- Left bar -->
+		<div id="leftbar">
+			<!-- Menu -->
+			<ul class="avmenu">
+        <li style="display:inline-block;text-align:center;">
+          <img src="../img/en.jpg" border="0" onclick="location.href='rules.html'" style="cursor:pointer"/>
+          <img src="../img/pt.gif" border="0" onclick="location.href='rules.pt.html'" style="cursor:pointer" />
+        </li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="rules.html">Rules</a></li>
+				<li><a href="env.html">Computational Environment</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="winners.html">Winners</a></li>
+				<li><a href="problems.html">Problems set</a></li>
+				<li><a href="local.html">Local Committee</a></li>
+        <li>&nbsp;</li>
+        <li><a href="../old.html">Previous contests</a></li>
+        <li>&nbsp;</li>
+        <li><a href="../study.html">How to study</a></li>
+				<li><a href="../committee.html">Committee</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+
+				<!-- News -->
+				<li id="news_content" class="anuncio">
+				</li>
+        <li>&nbsp;</li>
+        <li class="anuncio"><b>Visitor number</b></li>
+        <li>
+          <!-- Start of StatCounter Code for Default Guide -->
+          <script type="text/javascript">
+            var sc_project=10619515;
+            var sc_invisible=0;
+            var sc_security="ca1e0cda";
+            var scJsHost = (("https:" == document.location.protocol) ?
+                            "https://secure." : "http://www.");
+                            document.write("<sc"+"ript type='text/javascript' src='" +
+                                           scJsHost+
+                                           "statcounter.com/counter/counter.js'></"+"script>");
+            </script>
+          <!-- End of StatCounter Code for Default Guide -->
+        </li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			load('../news.html','news_content');
+		</script>
+
+		<!-- Right bar -->
+		<div id="rightbar">
+			<div id="sponsors" class="anuncio" style="text-align: center;">
+				<script type="text/javascript">
+					load('sponsors.html','sponsors');
+				</script>
+			</div>
+			<div class="anuncio">
+				<h1>Current Edition</h1>
+				<p><a href="..">Click here</a> for the current edition of the Marathon of
+				Parallel Programming</p>
+			</div>
+
+			<!-- Others information -->
+			<div id="others_info" class="anuncio"></div>
+			<script type="text/javascript">
+				load('../others_info.html','others_info');
+			</script>
+		</div>
+
+		<!-- Body -->
+		<div id="texto">
+			<h1>Rules</h1>
+			<br />
+      <h2>Categories</h2>
+      <p>There are two categories of teams: <i>Local</i> and <i>Remote</i>.</p>
+      <p>Teams that want to compete for the prize must attend WSCAD conference and
+      register for the <i>Local Contest</i>. They are called <i>Local Teams</i>.</p>
+      <p>Teams that want to participate in the Marathon and will not attend WSCAD
+      must register for the <i>Remote Contest</i>. They are called <i>Remote Teams</i>.</p>
+      <p>If there are any special rules for a category, it will be identified. Otherwise,
+      all the rules apply for <i>Teams</i> and <i>Contests</i> of both <i>Categories</i>.</p>
+      <p>Both <i>Contests</i> will run at the same time (see <a href="index.html">here</a>).</p>
+			<h2>Teams</h2>
+			<p>The Marathon is open to <i>Teams</i> that comprise up to three (3) student members,
+      who must be undergraduate or graduate students, and a coach.</p>
+      <p>For <i>Local Teams</i>, a substitute member can be indicated, and one substitution will be allowed
+      during the marathon - just before the <i>Local Contest</i>. Up to 6 teams will be enrolled
+      in the <i>Local Contest</i>. Each <i>Local Team</i> will have only a PC for the whole duration of
+      the Marathon, and access to a parallel machine to test and measure their
+      solutions. This environment should be tested in Warmup session. Reference books
+      and hard-copy materials will be allowed during the contest, and it is up to the
+      teams to bring them.</p>
+
+			<div class="box" align="center">
+				<a href="registration.html">Click here to register your team</a>
+			</div>
+
+			<h2>Problems</h2>
+			<p>An independent committee will specify a set of problems. Each one consists of
+      an informal explanation of the problem to be solved, the input and output formats
+      and a sequential implementation.</p>
+
+			<div class="box" align="center">
+				<a href="problems.html">Click here to get the problem set</a>
+			</div>
+
+			<h2>Tools</h2>
+      <p>Classical HPC libraries and tools (OpenMP, MPI, POSIX Threads), as well as
+      sequential tools for profiling, compiling and debugging, will be provided on the
+      target machine. Only <i>Local Teams</i> can access some of them (e.g. profiling tools).</p>
+      <p>An important remark is that speedup is the real target and any technique that can
+      accelerate the code will be allowed.</p>
+
+      <h2>Submission</h2>
+      <p>All <i>Teams</i> will access an Online Contest System: a modified version of <a
+      href="http://www.bombonera.org">BOCA</a>. Submissions, clarifications,
+      problems or any problem during the contest must be reported through this system.</p>
+      <p>Judges will inspect all submissions and any team will be disqualified for any
+      unfair and/or fraudulent submission. Also, any suspicious, malicious or plagiarism
+      code declassifies the <i>Team</i>.</p>
+      <p>A submission is a compressed file with your source code, the <i>Makefile</i>, and
+      an execution script. This script must have the name of the problem with capital letters
+      (e.g. <i>A</i>). You can submit as many solutions to a problem as you want.</p>
+
+			<h2>Score</h2>
+			<p>In order to take a submission into account, its output should be correct, which
+      means that it should have the same results compared to sequential outputs.</p>
+			<p>The acceleration of each submission will be measured as follows: the execution
+      time for a solution will be divided by the execution time for the sequential
+      implementation provided by the organization. A solution will be measured three times
+      and the meantime will be its final speedup. Any sequential optimization prior to the
+      parallelization will be a bonus. The speedup of all problems parallelized by a <i>Team</i>
+      will be added, so that the more (efficient) parallel programs it gets, the better
+      the score. Only the last submission of a problem will be taken into account for the
+      score.</p>
+			<p>In case of tie on <i>Remote Contest</i>, the submission time will be used to a tiebreak.</p>
+      <p>In the case of a tie on the <i>Local Contest</i>, the scalability of the solutions will be
+      measured to choose the best team, as follows: the organizers will run the parallel
+      solutions on the whole target machine and measure the new accelerations, adding them
+      up as in the former case. The winner will be the team that obtains the best
+      acceleration on the full machine.</p>
+
+      <h2>Terms &amp; Conditions</h2>
+      <p>The <i>Organizers</i> reserve the right to cancel, postpone, relocate or change the <i>Remote
+      Contest</i> at any time due to unforeseen circumstances, sovereign laws and regulations,
+      without notice or compensation. They also cannot assume liability for any changes in
+      the program due to external or unforeseen circumstances.</p>
+      <p>Only the <i>Organizers</i> will process the data concern to both <i>Contests</i> (registration
+      forms, submissions, solutions, source-code, online system information, passwords or any
+      other related data). For the purpose of social media, we will be processing your personal
+      data, including any additional information you may subsequently provide to us, for the
+      purposes of contacting or communicating with you, to respond to your posts, submissions,
+      comments, requests, inquiries or complaints, to request feedback from you, assessing your
+      application to register for the use or subscription, administer your participation
+      in contests, conduct internal activities and any other purposes as may be related to
+      the foregoing and/or as set out in the contest websites, e-mail lists and any other
+      social media sites.</p>
+      <p>Any and all issues with judging and scoring during the Marathon shall be resolved
+      solely by the <i>Judges</i> and <i>Committee</i>. <i>Teams</i> may not appeal to any other party. Only the
+      <i>Coach</i> can send an issue to the Committee within 24 hours after the end of the contest.</p>
+      <p>Should there arise any conflict related to the Marathon, the <i>Committee</i> decision
+      shall be considered final and binding.</p>
+      <p>The <i>Committee</i> may disqualify a <i>Team</i> in the event of a serious breach of rules or
+      fair play.</p>
+      <p>Any additional questions that arise will be provided on the Marathon website. If you have
+      questions, <a href="local.html">contact the Committee</a>.</p>
+      <p>The <i>Organizers</i> shall resolve any other unforeseen circumstances and cases.</p>
+    </div>
+
+		<!-- Footnotes -->
+		<div id="rodape">
+			<table>
+				<tr>
+					<td colspan="2">Organized by</td>
+				</tr>
+				<tr>
+					<td><a href="https://www.facom.ufms.br" target="_blank"><img src="facom.png" border="0" width="130" /></a></td>
+					<td><a href="http://www.mackenzie.br/" target="_blank"><img src="mackenzie.png" border="0" width="130" /></a></td>
+				</tr>
+			</table>
+				Better seen in <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>.
+		</div>
+	</div>
+</body>
+</html>
