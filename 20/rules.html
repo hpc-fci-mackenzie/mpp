@@ -97,21 +97,17 @@
 			<h1>Rules</h1>
 			<br />
       <h2>Categories</h2>
-      <p>This edition of the Marathon will have only one category of teams: <i>Remotes</i>.</p>
-      <p>The Registration in the Marathon is free and mandatory for teams that want to compete for the 
-        prize (see <a href="registration.html">Registration</a>).</p>
-      <p>If there are any special rules, it will be identified. Otherwise,
-      all the rules apply for <i>Teams</i>.</p>
-      <!--
-        <p>Both <i>Contests</i> will run at the same time (see <a href="index.html">here</a>).</p>
-      -->
+      <p>This edition of the Marathon will have only one category of teams: <i>Remotes</i>. We are
+      following the recommendations from the World Health Organization (WHO), regarding the
+      Coronavirus disease (COVID-19/SARS-CoV-2) outbreak</p>
+      <p>The Registration in the Marathon is free and mandatory for teams that want to participate
+      (see <a href="registration.html">Registration</a>).</p>
+      <p>This year, all the following rules apply to all <i>Teams</i>.</p>
 			<h2>Teams</h2>
 			<p>The Marathon is open to <i>Teams</i> that comprise up to three (3) student members,
       who must be undergraduate or graduate students, and a coach.</p>
-      <p>Each Team will have access to different parallel machine to test and measure their
-      solutions. This environment should be tested in Warmup session. Reference books
-      and hard-copy materials will be allowed during the contest, and it is up to the
-      teams to bring them.</p>
+      <p>Each Team should use its own PC to test and measure their solutions. Unfortunately, the
+      Marathon cannot lend a PC to each competitor or Team.</p>
 
 			<div class="box" align="center">
 				<a href="registration.html">Click here to register your team</a>
@@ -119,7 +115,7 @@
 
 			<h2>Problems</h2>
 			<p>An independent committee will specify a set of problems. Each one consists of
-      an informal explanation of the problem to be solved, the input and output formats
+      an informal explanation of the problem to be solved, the input and output formats,
       and a sequential implementation.</p>
 
 			<div class="box" align="center">
@@ -127,8 +123,7 @@
 			</div>
 
 			<h2>Tools</h2>
-      <p>Classical HPC libraries and tools (OpenMP, MPI, POSIX Threads), as well as
-      sequential tools for profiling, compiling and debugging, will be provided on the
+      <p>Classical HPC libraries and tools (OpenMP, MPI, POSIX Threads) will be provided on the
       target machine.</p>
       <p>An important remark is that speedup is the real target and any technique that can
       accelerate the code will be allowed.</p>
@@ -136,7 +131,7 @@
       <h2>Submission</h2>
       <p>All <i>Teams</i> will access an Online Contest System: a modified version of <a
       href="http://www.bombonera.org">BOCA</a>. Submissions, clarifications,
-      problems or any problem during the contest must be reported through this system.</p>
+      problems or any issue during the contest must be reported through this system.</p>
       <p>Judges will inspect all submissions and any team will be disqualified for any
       unfair and/or fraudulent submission. Also, any suspicious, malicious or plagiarism
       code declassifies the <i>Team</i>.</p>
@@ -155,11 +150,11 @@
       will be added, so that the more (efficient) parallel programs it gets, the better
       the score. Only the last submission of a problem will be taken into account for the
       score.</p>
-			<p>The submission time will be used to a tiebreak. The scalability of the solutions will be
-      measured to choose the best team, as follows: the organizers will run the parallel
-      solutions on the whole target machine and measure the new accelerations, adding them
-      up as in the former case. The winner will be the team that obtains the best
-      acceleration on the full machine.</p>
+      <p>The following procedure will be used to break standings ties when the difference of two
+      final scores is less or equal than 1.0: (i) the number of solved problems that has more
+      than 1.5 speedup; (ii) the sum of all submission time used at the score (the smaller the
+      better); (iii) the scalability of the solutions on the full target machine (the organizers
+      will run and measure all the accepted parallel solutions on the whole target machine).</p>
 
       <h2>Terms &amp; Conditions</h2>
       <p>The <i>Organizers</i> reserve the right to cancel, postpone, relocate or change the <i>Remote
